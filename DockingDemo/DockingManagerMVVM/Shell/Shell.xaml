@@ -1,0 +1,35 @@
+﻿<Window x:Class="DockingManagerMVVM.Shell"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             Height="400" Width="750" xmlns:mvvm="clr-namespace:DockingAdapterMVVM;assembly=DockingAdapterMVVM"
+        xmlns:local="clr-namespace:DockingManagerMVVM" syncfusion:SkinStorage.VisualStyle="VS2010"
+        Title="Docking Manager Demo" WindowStartupLocation="CenterScreen" Icon="../App.ico">
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+    <Window.InputBindings>
+        <KeyBinding Key="O" Modifiers="Control" Command="{Binding NewDocumentCommand}"/>
+    </Window.InputBindings>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <syncfusion:MenuAdv VerticalAlignment="Top" HorizontalAlignment="Stretch">
+            <syncfusion:MenuItemAdv Header="File">
+                <syncfusion:MenuItemAdv Header="Open Document" Command="{Binding OpenDocumentCommand}"/>
+                <syncfusion:MenuItemAdv Header="Exit" Command="{Binding CloseCommand}"/>
+            </syncfusion:MenuItemAdv>
+        </syncfusion:MenuAdv>
+
+        <mvvm:DockingAdapter Grid.Row="1" ItemsSource="{Binding Workspaces}"
+                             ActiveDocument="{Binding ActiveDocument,Mode=TwoWay}">
+
+        </mvvm:DockingAdapter>
+
+    </Grid>
+</Window>
