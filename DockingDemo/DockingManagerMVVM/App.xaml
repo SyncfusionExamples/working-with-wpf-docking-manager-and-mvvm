@@ -1,0 +1,26 @@
+﻿<Application x:Class="DockingManagerMVVM.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="Shell/Shell.xaml" xmlns:local="clr-namespace:DockingManagerMVVM">
+    <Application.Resources>
+        
+        <DataTemplate DataType="{x:Type local:Document}">
+            <Grid>
+                <local:DocumentView />
+            </Grid>
+        </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type local:DocumentsViewModel}">
+            <Grid>
+                <local:DocumentsView />
+            </Grid>
+        </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type local:PropertiesViewModel}">
+            <Grid>
+                <local:PropertiesView />
+            </Grid>
+        </DataTemplate>
+        
+    </Application.Resources>
+</Application>
