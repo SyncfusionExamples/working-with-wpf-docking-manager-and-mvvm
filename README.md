@@ -1,4 +1,4 @@
-# Working wtih WPF DockingManager and MVVM
+# Working with WPF DockingManager and MVVM
 
 This repository contains a sample that shows the WPF DockingManager in MVVM application to create MVVM adapter.
 
