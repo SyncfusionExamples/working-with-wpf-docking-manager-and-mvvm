@@ -5,7 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
              Height="400" Width="750" xmlns:mvvm="clr-namespace:DockingAdapterMVVM;assembly=DockingAdapterMVVM"
-        xmlns:local="clr-namespace:DockingManagerMVVM" syncfusion:SkinStorage.VisualStyle="VS2010"
+        xmlns:local="clr-namespace:DockingManagerMVVM" xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        syncfusionskin:SfSkinManager.VisualStyle="FluentLight"
         Title="Docking Manager Demo" WindowStartupLocation="CenterScreen" Icon="../App.ico">
     <Window.DataContext>
         <local:ViewModel />
