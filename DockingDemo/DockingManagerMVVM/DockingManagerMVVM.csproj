@@ -44,7 +44,13 @@
     </Reference>
     <Reference Include="Syncfusion.PropertyGrid.WPF">      
     </Reference>
+    <Reference Include="Syncfusion.SfInput.WPF">
+    </Reference>
+    <Reference Include="Syncfusion.SfSkinManager.WPF">
+    </Reference>
     <Reference Include="Syncfusion.Shared.WPF">
+    </Reference>
+    <Reference Include="Syncfusion.Themes.FluentLight.WPF">
     </Reference>
     <Reference Include="Syncfusion.Tools.WPF">
     </Reference>
