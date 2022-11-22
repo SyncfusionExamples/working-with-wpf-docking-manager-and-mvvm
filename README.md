@@ -19,3 +19,5 @@ The adapter is simply a user control that contains DockingManager as its content
     </mvvm:DockingAdapter>
 
 ![MVVM](DockingDemo/DockingManagerMVVM/Image/DockingManager%20MVVM.png)
+
+For more details please refer [DockingManager and MVVM](https://help.syncfusion.com/wpf/docking/pattern-and-practices#mvvmlight)
